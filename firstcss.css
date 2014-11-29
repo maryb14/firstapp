@@ -1,0 +1,53 @@
+body
+{
+	background: url("leaves.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#first
+{
+	border: 2px solid black;
+	background-color: #66ff66;
+	padding: 5px 5px 5px 10px;
+}
+
+#second
+{
+	border: 2px solid black;
+	background-color: #66ff66;
+	padding: 5px 5px 5px 10px;
+}
+
+#text
+{
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	background-color: #ffffcc;
+	width: 40%;
+	height: 488px;
+	padding: 5px;
+	-webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+	column-gap: 40px;
+	-moz-column-fill: auto;
+       column-fill: auto;
+	display: inline-block;
+	float: left;
+}
+
+#text2
+{
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	background-color: #ffffcc;
+	width: 40%;
+	padding: 5px;
+	margin: 3px;
+	height: 388px;
+	display: inline-block;
+	float: left;
+}
