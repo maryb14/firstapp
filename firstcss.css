@@ -5,6 +5,28 @@ body
 	background-size: cover;
 }
 
+#secsq
+{
+	position: relative;
+	top: 60px;
+	left: -60px;
+}
+
+#fstsq
+{
+	position: relative;
+	margin: 0px;
+	top: 0px;
+	left: 0px;
+}
+
+img
+{
+	width: 100px;
+	height: auto;
+	margin: 10px;
+}
+
 #first
 {
 	border: 2px solid black;
