@@ -1,9 +1,9 @@
 $(function(){
 	$("#abc").keyup(function(){	
 		var x=$("#abc").val().length;
-		$("#message").val("You have entered");	
-	});
-	$("#abc").keydown(function(){	
-		$("#message").remove();	
+		if(x>0)
+			$("#message").text("You have entered "+$('#abc').val().length+" letters");
+		else 
+			$("#message").text("");
 	});
 });
