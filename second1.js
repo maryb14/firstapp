@@ -1,7 +1,7 @@
 $(function(){
 	$("#abc").keyup(function(){	
 		var x=$("#abc").val().length;
-		$("<p id='message' >You have entered "+x+" letters</p>").insertAfter('#abc');	
+		$("#message").val("You have entered");	
 	});
 	$("#abc").keydown(function(){	
 		$("#message").remove();	
