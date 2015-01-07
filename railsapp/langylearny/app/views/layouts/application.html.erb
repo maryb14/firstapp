@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Langy Learny</title>
+  <title>LangyLearny</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<nav class="navbar navbar-default" id="youshouldwork">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">LangyLearny</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li> <%=link_to 'Registration', registration_url %> </li>
+        <li><a href="#">Log in</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <%= yield %>
 
