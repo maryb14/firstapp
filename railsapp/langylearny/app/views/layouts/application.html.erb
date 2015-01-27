@@ -15,15 +15,25 @@
     </div>
     <div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li> <%=link_to 'Registration', registration_url %> </li>
-        <li><a href="#">Log in</a></li> 
+        <li class="active"><%=link_to 'Home', root_url %></li>
+        <% if current_user.present? %>
+
+        <li> <%=link_to 'Log out', logout_url, method: 'delete' %> </li>
+
+        <% else %>
+
+        <li> <%=link_to 'Registration', new_user_url %> </li>
+        <li> <%=link_to 'Log in', login_url %> </li> 
+
+        <% end %>
       </ul>
     </div>
   </div>
 </nav>
 
-<%= yield %>
+<div class="container-fluid">
+  <%=yield %>
+</div>
 
 </body>
 </html>

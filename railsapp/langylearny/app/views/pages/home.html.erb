@@ -4,6 +4,12 @@
 
 </div>
 
+<% if flash[:notice].present? %>
+	<div class="alert alert-success" role="alert" >
+		<%= flash[:notice] %>
+	</div>
+<% end %>
+
 <button class="btn btn-primary">Sign up</button>
 
 <button>Sign in</button>
