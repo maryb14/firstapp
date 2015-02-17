@@ -1,16 +1,16 @@
 <div>
 
 <div id='welcome'>
-<h2>LangyLearny is a language game, as you may have figured! It was developed during the Learn IT, Girl! program by Mary and Dominika, so it shall be amazing!</h2>
-</div>
-
-</div>
-
 <% if flash[:notice].present? %>
 	<div class="alert alert-success" role="alert" >
 		<%= flash[:notice] %>
 	</div>
 <% end %>
+
+<h2>LangyLearny is a language game, as you may have figured! It was developed during the Learn IT, Girl! program by Mary and Dominika, so it shall be amazing!</h2>
+</div>
+
+</div>
 
 <%=link_to "New here? Let's get started!", new_user_url, class: "btn btn-danger center-block bhome"%>
 

@@ -1,3 +1,21 @@
-<% @categories.each do |c| %>
-	<%= link_to c.name, grammar_category_url(c) %>
-<% end %>
+<div class="row">
+  <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+    <table class="table table-striped" id="grammar-categories-list">
+      <thead>
+        <tr>
+          <th>Grammar Categories</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @categories.each do |c| %>
+          <tr>
+            <td>
+            	<%= link_to c.name, grammar_category_url(c) %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
