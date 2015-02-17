@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+GrammarCategory.create(name: 'Group Verbs', content:'test')
+GrammarCategory.create(name: 'Present Tense', content:'test2')

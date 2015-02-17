@@ -30,6 +30,12 @@ gem 'bcrypt-ruby'
 
 gem 'pry-rails'
 
+gem 'rails_admin'
+
+gem 'bootstrap-wysihtml5-rails', '> 0.3.1.24'
+
+gem 'ckeditor'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
