@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150205183032) do
+ActiveRecord::Schema.define(version: 20150224193553) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(version: 20150205183032) do
   create_table "grammar_categories", force: true do |t|
     t.string   "name"
     t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "questions", force: true do |t|
+    t.string   "content"
+    t.string   "answer"
+    t.integer  "grammar_category_id"
+    t.integer  "vocabulary_category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
