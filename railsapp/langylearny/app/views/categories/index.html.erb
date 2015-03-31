@@ -10,7 +10,7 @@
         <% @categories.each do |c| %>
           <tr>
             <td>
-            	<%= link_to c.name, grammar_category_url(c) %>
+            	<%= link_to c.name, category_url(c) %>
             </td>
           </tr>
         <% end %>

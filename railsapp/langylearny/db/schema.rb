@@ -11,23 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150224193553) do
+ActiveRecord::Schema.define(version: 20150331165014) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "grammar_categories", force: true do |t|
+  create_table "categories", force: true do |t|
     t.string   "name"
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_grammar_categ"
+  end
+
+  create_table "images", force: true do |t|
+    t.integer "category_id"
+    t.string  "name"
   end
 
   create_table "questions", force: true do |t|
     t.string   "content"
     t.string   "answer"
-    t.integer  "grammar_category_id"
-    t.integer  "vocabulary_category_id"
+    t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

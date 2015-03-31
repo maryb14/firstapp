@@ -9,4 +9,8 @@ class ApplicationController < ActionController::Base
   	@current_user ||= User.find_by(id: session[:user_id])
   end
 
+  def require_user
+  	redirect_to root_path unless current_user.present?
+  end
+
 end

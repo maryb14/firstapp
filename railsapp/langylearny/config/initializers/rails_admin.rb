@@ -1,9 +1,10 @@
 RailsAdmin.config do |config|
-  config.model GrammarCategory do
+  config.model Category do
     edit do
       # For RailsAdmin >= 0.5.0
       field :content, :ck_editor
       field :name
+      field :is_grammar_categ
       # For RailsAdmin < 0.5.0
       # field :description do
       #   bootstrap_wysihtml5 true
