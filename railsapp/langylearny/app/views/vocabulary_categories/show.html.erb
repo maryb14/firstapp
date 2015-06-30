@@ -4,6 +4,21 @@
     <div class="grammar-content">
       <%= @vocabulary_category.content.html_safe %>
     <div>
+    <table>
+      <tbody>
+        <% @category_items.each do |c| %>
+          <tr>
+            <td>
+            	<%= image_tag(c.image, class: "modal_image", data: {id: c.id}) %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
   </div>
 </div>
 
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    
+</div>

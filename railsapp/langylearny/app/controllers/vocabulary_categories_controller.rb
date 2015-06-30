@@ -8,6 +8,8 @@ class VocabularyCategoriesController <ApplicationController
 
 	def show
 		@vocabulary_category=Category.vocabulary_categ.find(params[:id])
+
+		@category_items=@vocabulary_category.category_items
 	end
 
 end

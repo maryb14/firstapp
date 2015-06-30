@@ -11,6 +11,10 @@ RailsAdmin.config do |config|
       # end
     end
   end
+
+  config.model CategoryItem do
+    
+  end
   ### Popular gems integration
 
   ## == Devise ==

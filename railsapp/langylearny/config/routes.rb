@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   resources :grammar_categories
 
   resources :vocabulary_categories
+
+  resources :category_items
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
