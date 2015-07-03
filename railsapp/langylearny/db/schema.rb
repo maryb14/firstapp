@@ -25,9 +25,9 @@ ActiveRecord::Schema.define(version: 20150530094646) do
   end
 
   create_table "category_items", force: true do |t|
-    t.string  "image"
     t.text    "content"
     t.integer "category_id"
+    t.string  "image"
   end
 
   create_table "images", force: true do |t|

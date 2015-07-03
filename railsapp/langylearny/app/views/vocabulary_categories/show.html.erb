@@ -9,7 +9,7 @@
         <% @category_items.each do |c| %>
           <tr>
             <td>
-            	<%= image_tag(c.image, class: "modal_image", data: {id: c.id}) %>
+            	<%= image_tag c.image_url(:thumb), class: "modal_image", data: {id: c.id} %>
             </td>
           </tr>
         <% end %>

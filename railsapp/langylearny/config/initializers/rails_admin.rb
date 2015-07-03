@@ -1,4 +1,13 @@
 RailsAdmin.config do |config|
+
+  config.authenticate_with do
+    authenticate_or_request_with_http_basic do |username, password|
+      username == ENV['ADMIN_USER'] &&
+      password == ENV['ADMIN_PASSWORD']
+    end
+  end
+
+
   config.model Category do
     edit do
       # For RailsAdmin >= 0.5.0
@@ -11,6 +20,7 @@ RailsAdmin.config do |config|
       # end
     end
   end
+
 
   config.model CategoryItem do
     
