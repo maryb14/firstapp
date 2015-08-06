@@ -1,0 +1,61 @@
+body {
+  background: #E8FAF7 !important;
+  padding-bottom: 100px;
+}
+
+a {
+  color: #06184F !important;
+}
+
+.title-on-page {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.navbar-default {
+  background-color: #0ea0da !important;
+  border-color: #4b4ced !important;
+}
+.navbar-default .navbar-brand {
+  color: #ececf3 !important;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #6bebe8 !important;
+}
+.navbar-default .navbar-text {
+  color: #ececf3 !important;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ececf3 !important;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #6bebe8 !important;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #6bebe8 !important;
+  background-color: #4b4ced !important;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #6bebe8 !important;
+  background-color: #4b4ced !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: #4b4ced !important;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #4b4ced !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ececf3 !important;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ececf3 !important;
+}
+.navbar-default .navbar-link {
+  color: #ececf3 !important;
+}
+.navbar-default .navbar-link:hover {
+  color: #6bebe8 !important;
+}

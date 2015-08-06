@@ -1,0 +1,21 @@
+  
+<div class = "row">
+    <div class = "col-md-4 col-md-offset-4">
+        <h2 class = "title-on-page">Questions</h3>
+        <% @questions.each do |c| %>
+        <div class = "individual-question">
+            <p class = "content-text"><%= c.content %></p>
+            <form>
+              <input type="radio" name="question" value="1" id="q1a"><%= c.answer1 %><br/>
+              <input type="radio" name="question" value="2" id="q1b"><%= c.answer2 %><br/>
+              <input type="radio" name="question" value="3" id="q1c"><%= c.answer3 %><br/>
+              <p class = "storage" ><%=c.right_answer%></p>
+            </form>
+        </div>
+      <% end %>
+    <button type = "button" class = "submit_button"> SUBMIT! </button>
+      </div>
+</div>
+
+
+

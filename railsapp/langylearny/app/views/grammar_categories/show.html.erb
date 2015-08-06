@@ -1,10 +1,11 @@
 <div class="row">
-  <div class="col-md-6 col-md-offset-3 grammar-category-view">
-    <h2><%= @grammar_category.name %></h2>
+  <div class="col-md-10 col-md-offset-1 grammar-category-view">
+    <h2 class="title-on-page"><b><%= @grammar_category.name %></b></h2>
     <div class="grammar-content">
       <%= @grammar_category.content.html_safe %>
-       <%= image_tag("tree.jpeg") %>
     <div>
-  </div>
+   </div>
+   <div id = "link-questions">
+   	<%=link_to 'Want to take a test?', questions_path %>  </div>
 </div>
 

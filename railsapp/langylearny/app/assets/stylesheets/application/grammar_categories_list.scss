@@ -1,14 +1,20 @@
 #grammar-categories-list {
-  border: 1px solid #E0DDDD;
 
   th {
     text-align: center;
     font-size: 28px;
+    font-family: Century Gothic, sans-serif;
+    background-color: #D7F9FA;
   }
 
   td {
     padding: 15px;
     font-size: 18px;
     text-align: center;
+    background-color: #5CEBED;
   }
+}
+
+.category-name {
+  color: #000000;
 }
