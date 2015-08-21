@@ -4,9 +4,13 @@
     <div class="grammar-content">
       <%= @vocabulary_category.content.html_safe %>
     <div>
+      <div class = "row">
         <% @category_items.each do |c| %>
+              <div class = "col-sm-4 col-xs-6">
             	<%= image_tag c.image_url(:thumb), class: "modal_image", data: {id: c.id} %>
-          <% end %>
+              </div>
+             <% end %>
+        </div>
       </div>
       </div>
   </div>

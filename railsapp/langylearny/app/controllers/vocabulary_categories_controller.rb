@@ -11,7 +11,7 @@ class VocabularyCategoriesController <ApplicationController
 
 		session[:category_id] = @vocabulary_category.id
 
-		@category_items = @vocabulary_category.category_items
+		@category_items = @vocabulary_category.category_items.order(:id)
 	end
 
 end
